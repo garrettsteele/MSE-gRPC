@@ -23,7 +23,15 @@ book_list = []
 inferno = {'ISBN': '9780374524524','title': 'Inferno', 'author': 'Dante',
                     'publishing_year': 1300, 'genre': 'FANTASY'}
 
+cave = {'ISBN': '9781452800882','title': 'Allegory of the Cave', 'author': 'Plato',
+                    'publishing_year': 514, 'genre': 'FANTASY'}
+
+frank = {'ISBN': '9780582541542','title': 'Frankenstein', 'author': 'Shelley',
+                    'publishing_year': 1818, 'genre': 'HORROR'}
+
 book_list.append(inferno)
+book_list.append(cave)
+book_list.append(frank)
 
 
 class InventoryService(book_pb2_grpc.InventoryServiceServicer):
